@@ -78,6 +78,10 @@ p {
   max-height: 4em;
 }
 
+.admin-main-nav, .admin-controls{
+  max-height: 4em;
+}
+
 @media screen and (max-width: 812px){
   .navigation-container{
     max-height: none;
