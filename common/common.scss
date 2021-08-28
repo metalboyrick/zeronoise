@@ -205,7 +205,7 @@ ol.category-breadcrumb {
 }
 
 .user-card {
-  background: none !important; // This is a conscious override to the custom background behavior.
+  background: --secondary !important; // This is a conscious override to the custom background behavior.
   border-radius: 0.5rem;
   overflow: hidden;
   .card-content {
