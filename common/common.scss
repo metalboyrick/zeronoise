@@ -22,8 +22,24 @@ p {
   }
 }
 
+.navigation-container{
+  position:static;
+  align-items:flex-start;
+  height: 100%;
+  background-color: transparent;
+  overflow:visible;
+  max-height: 5vw;
+}
+
+@media screen and (max-width: 812px){
+  .navigation-container{
+    max-height: none;
+  }
+}
 
 .nav-pills {
+  display:flex;
+  align-items: flex-start;
   & > li {
     margin-right: 0;
   }
@@ -44,18 +60,15 @@ p {
       border-bottom-color: var(--tertiary);
       background-color: transparent;
       color: var(--primary);
-      // transform: translateY(0.625em);
-      padding: 1.75em;
+      padding-bottom: 1.5em;
 
       @keyframes hover-anim {
         0% {
-          // transform: translateY(0);
-          padding: 0.75em 1.5em;
+          padding-bottom: 0.75em;
         }
 
         100%{
-          // transform: translateY(0.625em);
-          padding: 1.5em 1.5em;
+          padding-bottom:1.5em;
         }
       }
     }
