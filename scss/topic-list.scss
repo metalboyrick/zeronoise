@@ -41,7 +41,15 @@
     top: 60px;
     background-color: #36353b;
     z-index: 3;
+    
 
+  }
+  th:nth-child(1){
+    border-radius: 10px 0 0 10px;
+  }
+
+  th:nth-last-child(1){
+    border-radius: 0 10px 10px 0;
   }
   th {
     text-transform: uppercase;
@@ -49,7 +57,10 @@
     color: var(--primary);
     letter-spacing: 0.035em;
     font-weight: bold;
+    
   }
+
+  
   td {
     padding: 1rem 0.5rem;
   }
