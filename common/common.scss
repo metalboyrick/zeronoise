@@ -239,6 +239,10 @@ ol.category-breadcrumb {
   align-items: center;
 }
 
+.navigation-controls > details > summary{
+  height: 100%;
+}
+
 #create-topic {
   @extend %btn--big;
 }
