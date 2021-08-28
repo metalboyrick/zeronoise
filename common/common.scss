@@ -14,35 +14,41 @@ p {
 // Header
 .d-header {
   #site-logo {
-    animation-name: rotate;
-    animation-duration: 0.25s;
+    
     max-height: 2em;
     max-width: 100%;
     filter: invert(get_invert($logo-invert-colors))
       hue-rotate(#{$logo-hue-rotation}deg)
       brightness(calc((#{$logo-brightness} / 10) + 1));
 
-    @keyframes rotate {
+    
+  }
+
+  .title{
+    animation-name: rotate-back;
+    animation-duration: 0.25s;
+
+    @keyframes rotate-back{
       0% { 
-        transform: rotateZ(30);
+        transform: rotateY(30deg);
       }
       100%{
-        transform: rotateZ(0);
+        transform: rotateY(0deg);
       }
     }
   }
 
-  #site-logo:hover{
+  .title:hover{
     animation-name: rotate;
     animation-duration: 0.25s;
-    transform: rotateZ(30);
+    transform: rotateY(30deg);
 
     @keyframes rotate {
       0% { 
-        transform: rotateZ(0);
+        transform: rotateY(0deg);
       }
       100%{
-        transform: rotateZ(30);
+        transform: rotateY(30deg);
       }
     }
   }
