@@ -266,7 +266,7 @@ ol.category-breadcrumb {
 }
 
 .user-card {
-  background: radial-gradient(50% 50% at top 20% right 20%, rgba(234,92,31,0.15), rgba(27,27,28,0.15)) !important; // This is a conscious override to the custom background behavior.
+  background: --secondary !important; // This is a conscious override to the custom background behavior.
   border-radius: 0.5rem;
   overflow: hidden;
   .card-content {
